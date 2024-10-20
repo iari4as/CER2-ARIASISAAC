@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block main %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-15 shadow" id="continido">
+            <h2 class="fw-bold text-center py-5">Inicio de sesion</h2>
+                 {{error1}}{{error2}}
+            <hr>
+                <!--formulario-->
+                <form  method="post">
+                    {% csrf_token %}
+                    
+                      
+                   
+                    <div class="mb-4">
+                        <label for="username" class="form-label" id="username"> Nombre</label>
+                        <input type="username" class="form-control" name="username" placeholder="ej: Homero J. Simpson">
+                        
+                    </div> 
+                    
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password1" placeholder="*****" required>
+                        <hr>
+                        
+                        <label >Olvidaste tu contraseña?</label> <a href="#" style="color: black; font-weight: bold;">click aqui</a> 
+                        
+                        <label >No tienes una cuenta?</label> <a href="{%url 'signup' %}" style="color: black; font-weight: bold;">registrate</a>
+                        
+                    </div>
+                    
+                    <div class="d-grid">
+                        <button type="submit" class="btn" id="Boton"> Ingresar </button>
+                    </div>
+                    
+                </form>
+                    
+                    
+                </div>
+            </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+{%endblock%}

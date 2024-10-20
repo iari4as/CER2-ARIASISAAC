@@ -1,0 +1,60 @@
+{%extends 'core/base.html'%} 
+{% load static %}
+
+{%block main%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-15 shadow" id="continido">
+            <h2 class="fw-bold text-center py-5">Reciclaje</h2>
+                <!--formulario-->
+                <div class="mb-4">
+                    <label for="email" class="form-label" id="email"> Correo electronico</label>
+                    <input type="email" class="form-control" name="email" placeholder="ej: marges@us.tv">
+                </div>
+                <div class="mb-4"></div>
+                    <label for="Nombre" class="form-label" id="Nombre"> Nombre</label>
+                    <input type="Nombre" class="form-control" name="Nombre" placeholder="ej: Homero J. Simpson">
+                <div class="mb-4">
+                    <label for="Direccion" class="form-label" id="Direccion"> Direccon de recoleccion</label>
+                    <input type="Direccion" class="form-control" name="Direccion" placeholder="ej: Av. Evergreen #742">
+                </div>
+                <div class="mb-4">
+                    <label for="cantidad" class="form-label" id="cantidad"> cantidad de residuos (Kg)</label>
+                    <input type="cantidad" class="form-control" name="cantidad" placeholder="ej: 21 ">
+                </div>
+                <div class="mb-4">
+                    <label  for="comentarios" class="form-label" id="comentarios"> comentarios</label>
+                    <input type="comentarios" placeholder="ej: Manipular con cuidado..." class="form-control" name="comentarios" >
+                </div>
+
+                <div class="mb-4">
+                    <div class="form-floating">
+                        <select id="select1" class="form-select">
+                            
+                        </select>
+                        <label for="select1">Seleccione el tipo de residuo</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="form-floating">
+                        <select id="select2" class="form-select">
+                            <option value="">Seleccione una subcategoría</option>
+                        </select>
+                        <label for="select2">Subcategorías</label>
+                    </div>
+                </div>
+
+
+
+                <div class="d-grid">
+                    <button type="submit" class="btn" id="Boton"> Reciclar </button>
+                </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+{%endblock%}

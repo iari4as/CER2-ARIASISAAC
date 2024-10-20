@@ -1,0 +1,70 @@
+{%extends 'core/base.html'%} 
+{% load static %}
+{%block main%}
+
+
+<!--PAgina principal -->
+    
+<div class="container">
+
+    <div class="row">
+        
+        
+        <div class="col-12 descripcion">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat, placeat quaerat reiciendis molestias vitae non facilis aliquam architecto possimus et est, explicabo iusto. Dolores vel, earum asperiores perferendis nostrum maxime assumenda et possimus cupiditate eos magnam natus excepturi ducimus? Ratione earum recusandae eos beatae quas amet asperiores exercitationem rem!    
+        </div>
+
+        <!--galeria -->
+
+            <div class="justify-content-center col-12 col-md-9 shadow-lg" id="carrusel">
+                
+                <div id="carouselExample" class="carousel slide carousel-dark" >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'core/img/crema.jpg' %}" class="d-block w-100 img-fluid" alt="img1">
+                        <div class="carousel-caption d-md-block">
+                            <h5 style="color: #000; font-size: 35px;">EcoCrema Verde</h5>
+                            <p class="textoCarta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="{% static 'core/img/escobilla.jpg' %}" class="d-block w-100 img-fluid" alt="img2">
+                        <div class="carousel-caption d-md-block">
+                            <h5 style="color: white; font-size: 30px;">Escobilla rustica</h5>
+                            <p class="textoCarta" style="color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="{% static 'core/img/aro.jpg' %}" class="d-block w-100 img-fluid" alt="img3">
+                        <div class="carousel-caption d-md-block">
+                            <h5 style="color: white; font-size: 30px;" >Aro de luz </h5>
+                            <p class="textoCarta" style="color: #fff" >Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                        </div>
+                    
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+{%endblock%}
+
