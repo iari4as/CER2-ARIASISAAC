@@ -1,2 +1,5 @@
-# CER2-ARIASISAAC
-certamen2 TLP
+## Instalación de Dependencias
+
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando en la línea de comandos:
+
+pip install -r .\requirements.txt
